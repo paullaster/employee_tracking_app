@@ -16,7 +16,7 @@ class Employee {
          * :. yearsOfExperience(s) = ?
          */
         let yearsOfExperience = Math.abs(new Date () - new Date (this.datajoined));
-        return Math.ceil((yearsOfExperience / 1000) / 3600);
+        return Math.ceil(((yearsOfExperience / 1000) / 3600)/ 8784);
     };
 };
 
