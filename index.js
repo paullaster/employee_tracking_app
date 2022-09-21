@@ -34,6 +34,6 @@ const emp2 = new Employee ('Basil', 'Otieno', '2012-05-06');
 
 const employeeList = [emp1, emp2];
 employeeList.forEach(emp => {
-    console.log(emp.getEmployeeDetails);
+    console.log(emp.getEmployeeDetails());
 });
 
