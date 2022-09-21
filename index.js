@@ -22,11 +22,18 @@ class Employee {
         return Math.ceil(((yearsOfExperience / 1000) / 3600)/ 8784);
     };
     getEmployeeDetails () {
-
+        return {
+            'Employee Name' : this.name,
+            'Years of Experience': this.lengthOfService
+        }
     }
 };
 
-let emp1 = new Employee ('Paullaster', 'Okoth', '2020-10-01');
+const emp1 = new Employee ('Paullaster', 'Okoth', '2020-10-01');
+const emp2 = new Employee ('Basil', 'Otieno', '2012-05-06');
 
-console.log(emp1.lengthOfService);
+const employeeList = [emp1, emp2];
+employeeList.forEach(emp => {
+    console.log(emp.getEmployeeDetails);
+});
 
